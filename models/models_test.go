@@ -1,10 +1,10 @@
-package models_test
+package models
 
 import (
 	"testing"
 
 	"github.com/gobuffalo/packr"
-	"github.com/gobuffalo/suite"
+	"github.com/markbates/gormrecipe/suite"
 )
 
 type ModelSuite struct {

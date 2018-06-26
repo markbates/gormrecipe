@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/markbates/coke/actions"
+	"github.com/markbates/gormrecipe/actions"
 )
 
 // main is the starting point to your Buffalo application.

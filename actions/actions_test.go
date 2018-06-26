@@ -4,11 +4,19 @@ import (
 	"testing"
 
 	"github.com/gobuffalo/packr"
-	"github.com/gobuffalo/suite"
+	"github.com/markbates/gormrecipe/suite"
 )
 
 type ActionSuite struct {
 	*suite.Action
+}
+
+func (as *ActionSuite) SetupSuite() {
+	as.Action.SetupSuite()
+}
+
+func (as *ActionSuite) TearDownSuite() {
+	as.Action.TearDownSuite()
 }
 
 func Test_ActionSuite(t *testing.T) {

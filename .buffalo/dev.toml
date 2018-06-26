@@ -1,0 +1,14 @@
+[dev]
+
+  [[dev.command]]
+    name = "tests"
+    command = "buffalo"
+    args = ["test"]
+    extensions = [".go"]
+    ignore = []
+
+  # [[dev.http]]
+  #   name = "linter"
+  #   url = "http://127.0.0.1:4242/events"
+  #   extensions = [".go"]
+  #   ignore = [<%= REMOVED %>]
