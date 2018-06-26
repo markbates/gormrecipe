@@ -11,14 +11,6 @@ type ActionSuite struct {
 	*suite.Action
 }
 
-func (as *ActionSuite) SetupSuite() {
-	as.Action.SetupSuite()
-}
-
-func (as *ActionSuite) TearDownSuite() {
-	as.Action.TearDownSuite()
-}
-
 func Test_ActionSuite(t *testing.T) {
 	action, err := suite.NewActionWithFixtures(App(), packr.NewBox("../fixtures"))
 	if err != nil {
@@ -29,4 +21,5 @@ func Test_ActionSuite(t *testing.T) {
 		Action: action,
 	}
 	suite.Run(t, as)
+	// suite.Run(t, as)
 }
